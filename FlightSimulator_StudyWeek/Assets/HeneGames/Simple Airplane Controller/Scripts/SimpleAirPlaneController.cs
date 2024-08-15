@@ -148,6 +148,9 @@ namespace HeneGames.Airplane
         [Tooltip("How far must the plane be from the runway before it can be controlled again")]
         [SerializeField] private float takeoffLenght = 30f;
 
+        [Header("Death canvas")]
+        [SerializeField] private GameObject deathCanvas;
+
         private void Start()
         {
             //Setup speeds
@@ -196,6 +199,8 @@ namespace HeneGames.Airplane
             {
                 Movement();
                 SidewaysForceCalculation();
+                deathCanvas.SetActive(false);
+                Cursor.visible = false;
             }
             else
             {
@@ -206,6 +211,9 @@ namespace HeneGames.Airplane
             if (!planeIsDead && HitSometing())
             {
                 Crash();
+                deathCanvas.SetActive(true);
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
             }
         }
 
