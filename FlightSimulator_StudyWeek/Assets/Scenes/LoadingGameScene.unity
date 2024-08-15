@@ -1705,7 +1705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528e223473a5b76468e21a639a15ecf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slideDuration: 20
+  slideDuration: 5
   nextSceneName: FinalGameScene
 --- !u!1 &2062220205
 GameObject:

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1485.7731, g: 1300.4606, b: 1059.6407, a: 1}
+  m_IndirectSpecularColor: {r: 1490.3761, g: 1305.7882, b: 1065.1232, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1380,6 +1380,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1272537517895287247, guid: ac2cbe44320dc1e4a8bc3eaa98e3e65a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2219171639791559486, guid: ac2cbe44320dc1e4a8bc3eaa98e3e65a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2125,17 +2130,17 @@ PrefabInstance:
     - target: {fileID: 5821500120853101657, guid: bebe5fae0b9f0e94a8a2af3207b79b61,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.000000033527613
+      value: -0.00000002235174
       objectReference: {fileID: 0}
     - target: {fileID: 5821500120853101657, guid: bebe5fae0b9f0e94a8a2af3207b79b61,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000012136409
+      value: -0.00000019590324
       objectReference: {fileID: 0}
     - target: {fileID: 5821500120853101657, guid: bebe5fae0b9f0e94a8a2af3207b79b61,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000079798115
+      value: 0.0000000256122
       objectReference: {fileID: 0}
     - target: {fileID: 5821500121151271088, guid: bebe5fae0b9f0e94a8a2af3207b79b61,
         type: 3}
@@ -2160,17 +2165,17 @@ PrefabInstance:
     - target: {fileID: 5821500121151271088, guid: bebe5fae0b9f0e94a8a2af3207b79b61,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.018189501
+      value: -0.018189494
       objectReference: {fileID: 0}
     - target: {fileID: 5821500121151271088, guid: bebe5fae0b9f0e94a8a2af3207b79b61,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000012139097
+      value: -0.0000000472524
       objectReference: {fileID: 0}
     - target: {fileID: 5821500121151271088, guid: bebe5fae0b9f0e94a8a2af3207b79b61,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000008298593
+      value: 0.000000003959607
       objectReference: {fileID: 0}
     - target: {fileID: 5821500121559426816, guid: bebe5fae0b9f0e94a8a2af3207b79b61,
         type: 3}
@@ -2225,12 +2230,12 @@ PrefabInstance:
     - target: {fileID: 5821500121592022942, guid: bebe5fae0b9f0e94a8a2af3207b79b61,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000012215313
+      value: -0.00000007690582
       objectReference: {fileID: 0}
     - target: {fileID: 5821500121592022942, guid: bebe5fae0b9f0e94a8a2af3207b79b61,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000004891757
+      value: 0.000000011633206
       objectReference: {fileID: 0}
     - target: {fileID: 6923667052971952042, guid: bebe5fae0b9f0e94a8a2af3207b79b61,
         type: 3}
@@ -2280,7 +2285,7 @@ PrefabInstance:
     - target: {fileID: 6923667052971952045, guid: bebe5fae0b9f0e94a8a2af3207b79b61,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9099273
+      value: 0.90992725
       objectReference: {fileID: 0}
     - target: {fileID: 6923667052971952045, guid: bebe5fae0b9f0e94a8a2af3207b79b61,
         type: 3}
@@ -2290,12 +2295,12 @@ PrefabInstance:
     - target: {fileID: 6923667052971952045, guid: bebe5fae0b9f0e94a8a2af3207b79b61,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.41003668
+      value: 0.41003683
       objectReference: {fileID: 0}
     - target: {fileID: 6923667052971952045, guid: bebe5fae0b9f0e94a8a2af3207b79b61,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.025664449
+      value: -0.025664467
       objectReference: {fileID: 0}
     - target: {fileID: 8793844478064349485, guid: bebe5fae0b9f0e94a8a2af3207b79b61,
         type: 3}
@@ -3033,7 +3038,6 @@ RectTransform:
   m_Children:
   - {fileID: 407295696}
   - {fileID: 1056157060}
-  - {fileID: 168719183}
   - {fileID: 1542526387}
   - {fileID: 1185683438}
   m_Father: {fileID: 0}
@@ -3195,7 +3199,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 100000
-  field of view: 60
+  field of view: 60.000004
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -4226,9 +4230,10 @@ SceneRoots:
   - {fileID: 190566652}
   - {fileID: 1555988107}
   - {fileID: 1742474264}
-  - {fileID: 6207386824187594071}
   - {fileID: 851552432}
   - {fileID: 778356500}
   - {fileID: 1281865950}
-  - {fileID: 851552432}
   - {fileID: 784159917767910375}
+  - {fileID: 252861010}
+  - {fileID: 1399868356}
+  - {fileID: 1585272462}
