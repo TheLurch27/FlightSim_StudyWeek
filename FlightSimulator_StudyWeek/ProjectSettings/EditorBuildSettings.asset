@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/OutdoorsScene.unity
     guid: 8124e5870f4fd4c779e7a5f994e84ad1
+  - enabled: 1
+    path: Assets/Scenes/LoadingScreen.unity
+    guid: 708c2a42bee570e4aa47d492f7b9ce05
   m_configObjects: {}
