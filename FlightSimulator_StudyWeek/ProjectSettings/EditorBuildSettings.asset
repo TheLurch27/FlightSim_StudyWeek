@@ -5,7 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/OutdoorsScene.unity
     guid: 8124e5870f4fd4c779e7a5f994e84ad1
+  - enabled: 0
+    path: Assets/Scenes/LoadingScreen.unity
+    guid: 708c2a42bee570e4aa47d492f7b9ce05
+  - enabled: 1
+    path: Assets/Scenes/MainMenuScene.unity
+    guid: 96239c2a1d461634fbd3db7c7db31cec
+  - enabled: 1
+    path: Assets/Scenes/LoadingGameScene.unity
+    guid: 11d821d33a1d0124ca18ea0f9ef14982
+  - enabled: 1
+    path: Assets/Scenes/FinalGameScene.unity
+    guid: 89a045149d4afe246ad68fe026c9a761
   m_configObjects: {}
