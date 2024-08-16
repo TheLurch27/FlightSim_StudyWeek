@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class SlideshowManager : MonoBehaviour
 {
-    public float slideDuration = 55f;  // 4 Bilder x 10 Sekunden
+    public float slideDuration = 28f;  // 4 Bilder x 10 Sekunden
     public string nextSceneName = "FinalGameScene";  // Name der nächsten Szene
 
     private void Start()
