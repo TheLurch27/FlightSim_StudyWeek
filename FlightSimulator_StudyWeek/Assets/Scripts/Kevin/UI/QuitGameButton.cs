@@ -1,15 +1,10 @@
 using UnityEngine;
 
-public class QuitButton : MonoBehaviour
+public class Quit3DButton : MonoBehaviour
 {
-    public void QuitGame()
+    private void OnMouseDown()
     {
-        // Diese Zeile funktioniert nur in einer gebuildeten Anwendung, nicht im Unity Editor
+        Debug.Log("Quit Button Clicked");
         Application.Quit();
-
-        // Optional: Um im Editor zu testen, füge diese Zeile hinzu
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#endif
     }
 }

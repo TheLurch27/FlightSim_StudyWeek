@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
-using UnityEditorInternal;
+// using UnityEditorInternal;
 using Cinemachine;
 using System;
+using UnityEngine.SceneManagement;
 
 namespace HeneGames.Airplane
 {
@@ -148,8 +149,8 @@ namespace HeneGames.Airplane
         [Tooltip("How far must the plane be from the runway before it can be controlled again")]
         [SerializeField] private float takeoffLenght = 30f;
 
-        [Header("Death canvas")]
-        [SerializeField] private GameObject deathCanvas;
+        // [Header("Death canvas")]
+        // [SerializeField] private GameObject deathCanvas;
 
         private void Start()
         {
@@ -199,8 +200,6 @@ namespace HeneGames.Airplane
             {
                 Movement();
                 SidewaysForceCalculation();
-                deathCanvas.SetActive(false);
-                Cursor.visible = false;
             }
             else
             {
@@ -211,9 +210,7 @@ namespace HeneGames.Airplane
             if (!planeIsDead && HitSometing())
             {
                 Crash();
-                deathCanvas.SetActive(true);
-                Cursor.visible = true;
-                Cursor.lockState = CursorLockMode.None;
+                
             }
         }
 
@@ -581,23 +578,27 @@ namespace HeneGames.Airplane
 
         public virtual void Crash()
         {
-            //Invoke action
-            crashAction?.Invoke();
 
-            //Set rigidbody to non cinematic
-            rb.isKinematic = false;
-            rb.useGravity = true;
-            rb.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
-
-            //Add last speed to rb
-            rb.AddForce(transform.forward * lastEngineSpeed, ForceMode.VelocityChange);
-
-            //Change every collider trigger state and remove rigidbodys
-            for (int i = 0; i < airPlaneColliders.Count; i++)
-            {
-                airPlaneColliders[i].GetComponent<Collider>().isTrigger = false;
-                Destroy(airPlaneColliders[i].GetComponent<Rigidbody>());
-            }
+            SceneManager.LoadScene("MainMenuScene");
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            // //Invoke action
+            // crashAction?.Invoke();
+            // 
+            // //Set rigidbody to non cinematic
+            // rb.isKinematic = false;
+            // rb.useGravity = true;
+            // rb.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
+            // 
+            // //Add last speed to rb
+            // rb.AddForce(transform.forward * lastEngineSpeed, ForceMode.VelocityChange);
+            // 
+            // //Change every collider trigger state and remove rigidbodys
+            // for (int i = 0; i < airPlaneColliders.Count; i++)
+            // {
+            //     airPlaneColliders[i].GetComponent<Collider>().isTrigger = false;
+            //     Destroy(airPlaneColliders[i].GetComponent<Rigidbody>());
+            // }
 
             //Kill player
             planeIsDead = true;

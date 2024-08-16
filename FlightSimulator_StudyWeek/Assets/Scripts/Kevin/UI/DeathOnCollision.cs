@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DeathOnCollision : MonoBehaviour
 {
@@ -18,10 +19,12 @@ public class DeathOnCollision : MonoBehaviour
     {
         if (collision.gameObject.tag == "Terrain")
         {
-            if (deathCanvas != null)
-            {
-                deathCanvas.SetActive(true);
-            }
+            // if (deathCanvas != null)
+            // {
+            //     deathCanvas.SetActive(true);
+            // }
+
+            SceneManager.LoadScene("MainMenuScene");
         }
     }
 }
